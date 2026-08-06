@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 function Login() {
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center">
@@ -7,18 +6,16 @@ function Login() {
 
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-red-500">
-            🎬 CineScope
+            CINESCOPE
           </h1>
 
           <p className="text-gray-300 mt-2">
-            Trusted Reviews • Smart Recommendations
+            discover movies you love
           </p>
         </div>
-
         <h2 className="text-2xl font-semibold text-white mb-6">
           Login
         </h2>
-
         <form>
 
           <div className="mb-4">
@@ -59,7 +56,7 @@ function Login() {
             to="/register"
             className="text-red-400 hover:underline"
           >
-            Register
+            Signup
           </Link>
         </p>
 
@@ -67,5 +64,4 @@ function Login() {
     </div>
   );
 }
-
 export default Login;
