@@ -1,0 +1,44 @@
+.home {
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+
+.home h1 {
+  color: #ff3d00;
+}
+
+.home p {
+  color: white;
+}
+
+.home input {
+  width: 300px;
+  padding: 12px;
+  margin: 20px;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.movie {
+  background: #1f1f1f;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.movie button {
+  width: 100%;
+  padding: 12px;
+  background: #ff3d00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

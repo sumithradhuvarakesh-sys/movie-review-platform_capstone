@@ -1,28 +1,55 @@
-import Navbar from "../components/Navbar";
-import MovieCard from "../components/MovieCard";
+import { useNavigate } from "react-router-dom";
+import "./Home.css";
+
 function Home() {
+
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <Navbar />
-      <h2>Home Page</h2>
-      <input type="text" placeholder="Search Movies" />
-      <br /><br />
-      <MovieCard
-        title="spider man brand new day"
-        rating="4.5"
-        genre="Action/Superhero"
+    <div className="home">
+
+      <h1>CINE SCOPE</h1>
+
+      <p>Discover Movies & Share Reviews</p>
+
+      <input
+        type="text"
+        placeholder="Search Movies..."
       />
-      <MovieCard
-        title="odyssey"
-        rating="4.8"
-        genre="periodic"
-      />
-      <MovieCard
-        title="jana nayagan"
-        rating="4.3"
-        genre="Action Thriller"
-      />
+
+      <div className="movies">
+
+        <div className="movie">
+          <h2>Spider-Man: Brand New Day</h2>
+          <p>⭐ 4.5</p>
+
+          <button onClick={() => navigate("/movie/1")}>
+            View Details
+          </button>
+        </div>
+
+        <div className="movie">
+          <h2>The Odyssey</h2>
+          <p>⭐ 4.8</p>
+
+          <button onClick={() => navigate("/movie/2")}>
+            View Details
+          </button>
+        </div>
+
+        <div className="movie">
+          <h2>Jana Nayagan</h2>
+          <p>⭐ 4.3</p>
+
+          <button onClick={() => navigate("/movie/3")}>
+            View Details
+          </button>
+        </div>
+
+      </div>
+
     </div>
   );
 }
+
 export default Home;
